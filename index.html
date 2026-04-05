@@ -1,0 +1,1040 @@
+<!-- Design System -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#e0e0ff",
+                    "on-primary-fixed-variant": "#4953ac",
+                    "on-primary-container": "#3f48a1",
+                    "tertiary-fixed": "#d5dffd",
+                    "surface-dim": "#d0dbec",
+                    "on-tertiary": "#f9f8ff",
+                    "tertiary": "#545f78",
+                    "on-secondary-fixed-variant": "#5a5b64",
+                    "on-secondary-container": "#50515a",
+                    "secondary-container": "#e2e1ed",
+                    "on-primary": "#f9f6ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#455068",
+                    "surface-container-highest": "#dae3f2",
+                    "inverse-on-surface": "#9b9da2",
+                    "outline": "#727b89",
+                    "surface-container-high": "#e2e8f5",
+                    "error-dim": "#4f0116",
+                    "surface-tint": "#4c56af",
+                    "on-tertiary-fixed-variant": "#4f5a72",
+                    "primary": "#4c56af",
+                    "inverse-primary": "#929bfa",
+                    "surface-bright": "#f8f9ff",
+                    "error": "#9e3f4e",
+                    "surface-container": "#e9eef9",
+                    "secondary-fixed": "#e2e1ed",
+                    "outline-variant": "#aab3c1",
+                    "surface": "#f8f9ff",
+                    "on-tertiary-fixed": "#333d55",
+                    "on-error-container": "#782232",
+                    "primary-fixed": "#e0e0ff",
+                    "secondary": "#5e5e68",
+                    "on-primary-fixed": "#2c358e",
+                    "secondary-dim": "#52525c",
+                    "surface-variant": "#dae3f2",
+                    "on-secondary-fixed": "#3e3f48",
+                    "tertiary-container": "#d5dffd",
+                    "tertiary-dim": "#49536b",
+                    "on-background": "#2a333f",
+                    "on-secondary": "#faf8ff",
+                    "inverse-surface": "#0b0e12",
+                    "surface-container-low": "#f1f3fc",
+                    "error-container": "#ff8b9a",
+                    "primary-fixed-dim": "#ced1ff",
+                    "on-surface": "#2a333f",
+                    "secondary-fixed-dim": "#d4d3de",
+                    "primary-dim": "#4049a2",
+                    "on-error": "#fff7f7",
+                    "background": "#f8f9ff",
+                    "tertiary-fixed-dim": "#c7d1ee",
+                    "on-surface-variant": "#57606d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-slate-50/70 dark:bg-slate-950/70 backdrop-blur-xl">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#4c56af] dark:text-[#7986cb]" data-icon="language">language</span>
+<span class="text-xl font-extrabold tracking-tighter text-[#4c56af] dark:text-[#7986cb] font-manrope">VishwaPass</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 dark:text-slate-400 font-bold hover:bg-slate-200/50 dark:hover:bg-slate-800/50 px-3 py-1 rounded-xl transition-all">हि/EN</button>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Header Section -->
+<section class="mb-10">
+<div class="flex items-center gap-2 text-primary font-semibold mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="school">school</span>
+<span class="text-xs uppercase tracking-widest font-label">Student Visa Journey</span>
+</div>
+<h1 class="text-4xl font-extrabold text-on-surface tracking-tight mb-4">UK Student Visa</h1>
+<div class="bg-surface-container-low rounded-xl p-6 flex items-center justify-between">
+<div>
+<div class="text-on-surface-variant text-sm mb-1">Overall Progress</div>
+<div class="text-2xl font-bold text-primary">65%</div>
+</div>
+<div class="w-2/3 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[65%]"></div>
+</div>
+</div>
+</section>
+<!-- Checklist Grid -->
+<div class="space-y-4">
+<!-- Item 1: Ready -->
+<div class="group bg-surface-container-lowest rounded-xl p-5 shadow-none transition-all duration-300 hover:bg-surface-container hover:translate-x-1">
+<div class="flex items-start justify-between">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-green-600" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-on-surface">Valid Passport</h3>
+<div class="relative group/tip">
+<span class="material-symbols-outlined text-slate-400 text-sm cursor-help" data-icon="info">info</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-inverse-surface text-inverse-on-surface text-[11px] rounded-md opacity-0 group-hover/tip:opacity-100 transition-opacity pointer-events-none z-10 shadow-lg">
+                                        Must be valid for at least 6 months from the date of application.
+                                    </div>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant mt-1">Verified: Expiry Oct 2028</p>
+</div>
+</div>
+<div class="text-[10px] font-bold text-green-600 px-2 py-1 bg-green-100 rounded-full uppercase tracking-tighter">Ready</div>
+</div>
+</div>
+<!-- Item 2: Needs Fix -->
+<div class="group bg-surface-container-lowest rounded-xl p-5 shadow-none transition-all duration-300 hover:bg-surface-container border-l-4 border-yellow-400">
+<div class="flex items-start justify-between">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-yellow-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-yellow-600" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-on-surface">Bank Statement</h3>
+<div class="relative group/tip">
+<span class="material-symbols-outlined text-slate-400 text-sm cursor-help" data-icon="lightbulb">lightbulb</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-3 bg-inverse-surface text-inverse-on-surface text-[11px] rounded-md opacity-0 group-hover/tip:opacity-100 transition-opacity pointer-events-none z-10 shadow-lg">
+                                        Ensure your bank statement is from the last 30 days and shows the 28-day maintenance period.
+                                    </div>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant mt-1">Uploaded 2 days ago. Statement date is older than 31 days.</p>
+<button class="mt-3 text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+<span class="material-symbols-outlined text-sm" data-icon="upload">upload</span>
+                                Re-upload Correct Version
+                            </button>
+</div>
+</div>
+<div class="text-[10px] font-bold text-yellow-700 px-2 py-1 bg-yellow-100 rounded-full uppercase tracking-tighter">Needs Fix</div>
+</div>
+</div>
+<!-- Item 3: Missing -->
+<div class="group bg-surface-container-lowest rounded-xl p-5 shadow-none transition-all duration-300 hover:bg-surface-container">
+<div class="flex items-start justify-between">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400" data-icon="description">description</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-slate-400">CAS Letter</h3>
+<div class="relative group/tip">
+<span class="material-symbols-outlined text-slate-400 text-sm cursor-help" data-icon="verified">verified</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-52 p-3 bg-inverse-surface text-inverse-on-surface text-[11px] rounded-md opacity-0 group-hover/tip:opacity-100 transition-opacity pointer-events-none z-10 shadow-lg">
+                                        CAS should not be issued more than 6 months before your course start date.
+                                    </div>
+</div>
+</div>
+<p class="text-sm text-slate-400 mt-1">Not yet provided by the University.</p>
+<button class="mt-3 px-4 py-2 bg-surface-container-high text-on-surface text-xs font-bold rounded-xl flex items-center gap-2 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                                Upload Missing
+                            </button>
+</div>
+</div>
+<div class="text-[10px] font-bold text-slate-400 px-2 py-1 bg-slate-100 rounded-full uppercase tracking-tighter">Missing</div>
+</div>
+</div>
+<!-- Item 4: TB Certificate -->
+<div class="group bg-surface-container-lowest rounded-xl p-5 shadow-none transition-all duration-300 hover:bg-surface-container">
+<div class="flex items-start justify-between">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-green-600" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-on-surface">TB Certificate</h3>
+<div class="relative group/tip">
+<span class="material-symbols-outlined text-slate-400 text-sm cursor-help" data-icon="local_hospital">local_hospital</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-3 bg-inverse-surface text-inverse-on-surface text-[11px] rounded-md opacity-0 group-hover/tip:opacity-100 transition-opacity pointer-events-none z-10 shadow-lg">
+                                        Indian residents must obtain this from a UKVI approved clinic only.
+                                    </div>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant mt-1">Verified: Apollo Clinics, Bengaluru</p>
+</div>
+</div>
+<div class="text-[10px] font-bold text-green-600 px-2 py-1 bg-green-100 rounded-full uppercase tracking-tighter">Ready</div>
+</div>
+</div>
+</div>
+<!-- Pro Tip Card -->
+<div class="mt-8 p-6 bg-primary/5 rounded-3xl border-2 border-primary/10 relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 opacity-10 scale-150 rotate-12 transition-transform group-hover:rotate-45">
+<span class="material-symbols-outlined text-8xl text-primary" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="campaign">campaign</span>
+<span class="font-bold text-primary font-headline">Visa Expert Tip</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Most Indian students are rejected due to "Maintenance Funds" discrepancies. Double check that your bank statement clearly shows the <strong class="text-on-surface">28-day holding period</strong> ending no more than 31 days before application.
+                </p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pt-3 pb-6 bg-slate-50/70 dark:bg-slate-950/70 backdrop-blur-xl rounded-t-3xl shadow-[0_-12px_32px_rgba(26,35,126,0.06)]">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#4c56af15] dark:bg-[#4c56af30] text-[#4c56af] dark:text-[#7986cb] rounded-xl px-4 py-1 scale-110 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="fact_check" style="font-variation-settings: 'FILL' 1;">fact_check</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Checklist</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Vault</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Profile</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Visa Document Checklist -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VishwaPass - Your Sovereign Visa Journey</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-container": "#e0e0ff",
+                      "on-primary-fixed-variant": "#4953ac",
+                      "on-primary-container": "#3f48a1",
+                      "tertiary-fixed": "#d5dffd",
+                      "surface-dim": "#d0dbec",
+                      "on-tertiary": "#f9f8ff",
+                      "tertiary": "#545f78",
+                      "on-secondary-fixed-variant": "#5a5b64",
+                      "on-secondary-container": "#50515a",
+                      "secondary-container": "#e2e1ed",
+                      "on-primary": "#f9f6ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#455068",
+                      "surface-container-highest": "#dae3f2",
+                      "inverse-on-surface": "#9b9da2",
+                      "outline": "#727b89",
+                      "surface-container-high": "#e2e8f5",
+                      "error-dim": "#4f0116",
+                      "surface-tint": "#4c56af",
+                      "on-tertiary-fixed-variant": "#4f5a72",
+                      "primary": "#4c56af",
+                      "inverse-primary": "#929bfa",
+                      "surface-bright": "#f8f9ff",
+                      "error": "#9e3f4e",
+                      "surface-container": "#e9eef9",
+                      "secondary-fixed": "#e2e1ed",
+                      "outline-variant": "#aab3c1",
+                      "surface": "#f8f9ff",
+                      "on-tertiary-fixed": "#333d55",
+                      "on-error-container": "#782232",
+                      "primary-fixed": "#e0e0ff",
+                      "secondary": "#5e5e68",
+                      "on-primary-fixed": "#2c358e",
+                      "secondary-dim": "#52525c",
+                      "surface-variant": "#dae3f2",
+                      "on-secondary-fixed": "#3e3f48",
+                      "tertiary-container": "#d5dffd",
+                      "tertiary-dim": "#49536b",
+                      "on-background": "#2a333f",
+                      "on-secondary": "#faf8ff",
+                      "inverse-surface": "#0b0e12",
+                      "surface-container-low": "#f1f3fc",
+                      "error-container": "#ff8b9a",
+                      "primary-fixed-dim": "#ced1ff",
+                      "on-surface": "#2a333f",
+                      "secondary-fixed-dim": "#d4d3de",
+                      "primary-dim": "#4049a2",
+                      "on-error": "#fff7f7",
+                      "background": "#f8f9ff",
+                      "tertiary-fixed-dim": "#c7d1ee",
+                      "on-surface-variant": "#57606d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.75rem",
+                      "full": "1.5rem"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-slate-50/70 backdrop-blur-xl">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#4c56af]" data-icon="language">language</span>
+<span class="text-xl font-extrabold tracking-tighter text-[#4c56af]">VishwaPass</span>
+</div>
+<!-- Language Pivot -->
+<div class="bg-surface-container-high rounded-full p-1 flex items-center gap-1">
+<button class="px-3 py-1 text-[#4c56af] font-bold bg-surface-container-lowest rounded-full shadow-sm text-xs">EN</button>
+<button class="px-3 py-1 text-on-surface-variant font-medium hover:text-on-surface text-xs transition-colors">हिं</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Search Section -->
+<section class="mb-12">
+<h1 class="text-4xl font-extrabold text-on-surface mb-4 tracking-tight leading-tight">
+                Where will your <br/>journey take you?
+            </h1>
+<p class="text-on-surface-variant mb-8 font-body max-w-md">
+                Secure your visa with the precision of a global citizen. Fast, transparent, and prestigious.
+            </p>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+</div>
+<input class="w-full h-16 pl-14 pr-6 rounded-xl border-none bg-surface-container-low text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary-dim transition-all shadow-sm" placeholder="Search destination country..." type="text"/>
+</div>
+</section>
+<!-- Quick Visa Types Bento -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-bold tracking-tight">Visa Categories</h2>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<button class="flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-sm border-none hover:bg-primary-container group transition-all duration-300">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl group-hover:scale-110 transition-transform" data-icon="school">school</span>
+<span class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Student</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-sm border-none hover:bg-primary-container group transition-all duration-300">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl group-hover:scale-110 transition-transform" data-icon="luggage">luggage</span>
+<span class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Tourist</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl shadow-sm border-none hover:bg-primary-container group transition-all duration-300">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl group-hover:scale-110 transition-transform" data-icon="work">work</span>
+<span class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Business</span>
+</button>
+</div>
+</section>
+<!-- Popular Destinations Editorial Grid -->
+<section class="mb-8">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-bold tracking-tight">Popular Destinations</h2>
+<button class="text-primary text-sm font-bold flex items-center gap-1">View all <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card: United Kingdom -->
+<div class="group overflow-hidden rounded-xl bg-surface-container-low transition-all duration-300">
+<div class="h-48 relative overflow-hidden">
+<img alt="London" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="iconic Big Ben and Westminster Bridge in London at twilight with dramatic evening city lights and deep blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh1rXgzf8TttdkJJvggSzv35-spmcIW0y0OEvdMLkUIdP7IxQ6N1lkPokiBt3jDsYtWQdzrfsuMJwCxz0hPKLKCXm-b1uUoaRMiQb0Pcov_6k0N1bzvaJb2-WvYAZDl7y93swvmY-GNAgIIQUMPstfrr04LBzMypp2uYIuttOuDliMuBD-_BeB-4fjMYHLI3l3-zqdRcpGmJk2RggSBd3c8FSkclxtuvKF4cB-7z4IXD9Qnj5brOfcxhxy3oTzGafdowPTH_daekE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<h3 class="text-white text-2xl font-bold">United Kingdom</h3>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<div class="flex justify-between items-end">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline mb-1">Starting from</p>
+<p class="text-lg font-bold text-on-surface">₹12,499</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] uppercase tracking-widest text-outline mb-1">Processing</p>
+<p class="text-sm font-semibold text-primary">15-20 Days</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Card: USA -->
+<div class="group overflow-hidden rounded-xl bg-surface-container-low transition-all duration-300">
+<div class="h-48 relative overflow-hidden">
+<img alt="New York" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="New York City skyline with the Statue of Liberty at golden hour with warm sunlight reflecting off buildings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoxSpaZDLts3KRQct0-bVBk5e9cYtigFK6EKmTjTTfICBtXB7g0coURmBBTb2ZurvrMvLI5hMugJOFR16KCNLLGMNsWohpZGHBGvMUe-S09pcgEKCQsqExl0itsyKL91IgwAC_WqhCoppqV0mdIg6sgvUcHRjaodhn1YIEE02VtAUdnq_qGzSgJd6yILsCR0w3hqpV78IrHjfY_JTQRmEfBkKkx5bLrrn7VpxbiBOfMomDvBylqIaU96kxOq1Ht2-BYt0GVbLSG0c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<h3 class="text-white text-2xl font-bold">United States</h3>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<div class="flex justify-between items-end">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline mb-1">Starting from</p>
+<p class="text-lg font-bold text-on-surface">₹15,800</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] uppercase tracking-widest text-outline mb-1">Processing</p>
+<p class="text-sm font-semibold text-primary">45-60 Days</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Card: Germany -->
+<div class="group overflow-hidden rounded-xl bg-surface-container-low transition-all duration-300">
+<div class="h-48 relative overflow-hidden">
+<img alt="Germany" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="picturesque German medieval town with timber-framed houses and cobblestone streets under a soft blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOeXW1qppvi-d70yAfRsY1iuK-03gxr14_JweyiivZupVeAkJeYuiob6gSMiQLLwUJo621zVGtDrQRsUo752HGr6Xq--akcrwi_Wk7oUjjMuxV1xWNQuYjunYmig6vkRzUOGfNI7Nld_fjZ5TCnXxVWGE8ypATCDXW2SojR-d5utMMTlYbvm5emtdjMxyLBwgdk3l028iqIeC9CCpuOlu7JHc01ZRi4Bw36MRtTtmmiIpjq0qs5Y6fDuI9_tQ-P8md-z_AmgpOxJQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<h3 class="text-white text-2xl font-bold">Germany</h3>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<div class="flex justify-between items-end">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline mb-1">Starting from</p>
+<p class="text-lg font-bold text-on-surface">₹9,900</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] uppercase tracking-widest text-outline mb-1">Processing</p>
+<p class="text-sm font-semibold text-primary">12-15 Days</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Card: Thailand -->
+<div class="group overflow-hidden rounded-xl bg-surface-container-low transition-all duration-300">
+<div class="h-48 relative overflow-hidden">
+<img alt="Thailand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="tranquil tropical beach in Thailand with turquoise waters, limestone cliffs, and a longtail boat on white sand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrcvJG_45kd3v2XFoK4UKvtSOJZ2aciim8pydpJj4foqjwhDnvo8zY2nmx1AvNryxI0FRy5YAQ8YLWn2FWhqQN2VBkkR5UgtZrbMYty-aKzMDgwSFMx62y62ShOCp6jWhtHMW8lViZKOI86kbBxj8GDTFdV9n62dSpxNwC71GtEu0Y4616dWpBHjNS9EJc2mxp6MTRDEEpDV2o9u8l_RTPD0KLDbucQYntukwQfjP_mWsvEvSIQKY7k0UFpLv06WIF9a6zvOuqOvA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<h3 class="text-white text-2xl font-bold">Thailand</h3>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest">
+<div class="flex justify-between items-end">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline mb-1">Starting from</p>
+<p class="text-lg font-bold text-on-surface">₹2,500</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] uppercase tracking-widest text-outline mb-1">Processing</p>
+<p class="text-sm font-semibold text-primary">3-5 Days</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Indicator -->
+<section class="mt-12 p-8 bg-primary rounded-3xl relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-white text-2xl font-bold mb-2">Secure Vault™</h3>
+<p class="text-primary-fixed-dim text-sm max-w-xs mb-6">Your documents are encrypted and stored with sovereign-grade security protocols.</p>
+<button class="bg-surface-container-lowest text-primary px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+                    Open Vault
+                </button>
+</div>
+<!-- Decorative abstraction -->
+<div class="absolute -right-8 -bottom-8 w-48 h-48 bg-primary-dim rounded-full opacity-50 blur-3xl"></div>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pt-3 pb-6 bg-slate-50/70 backdrop-blur-xl shadow-[0_-12px_32px_rgba(26,35,126,0.06)] rounded-t-3xl">
+<a class="flex flex-col items-center justify-center bg-[#4c56af15] text-[#4c56af] rounded-xl px-4 py-1 transition-all duration-300 scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1 hover:bg-slate-100 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Checklist</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1 hover:bg-slate-100 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Vault</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1 hover:bg-slate-100 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Profile</span>
+</a>
+</nav>
+<!-- Floating Action Button (FAB) - Suppressed because we are on Home -->
+</body></html>
+
+<!-- Home & Destination Selection -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#e0e0ff",
+                    "on-primary-fixed-variant": "#4953ac",
+                    "on-primary-container": "#3f48a1",
+                    "tertiary-fixed": "#d5dffd",
+                    "surface-dim": "#d0dbec",
+                    "on-tertiary": "#f9f8ff",
+                    "tertiary": "#545f78",
+                    "on-secondary-fixed-variant": "#5a5b64",
+                    "on-secondary-container": "#50515a",
+                    "secondary-container": "#e2e1ed",
+                    "on-primary": "#f9f6ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#455068",
+                    "surface-container-highest": "#dae3f2",
+                    "inverse-on-surface": "#9b9da2",
+                    "outline": "#727b89",
+                    "surface-container-high": "#e2e8f5",
+                    "error-dim": "#4f0116",
+                    "surface-tint": "#4c56af",
+                    "on-tertiary-fixed-variant": "#4f5a72",
+                    "primary": "#4c56af",
+                    "inverse-primary": "#929bfa",
+                    "surface-bright": "#f8f9ff",
+                    "error": "#9e3f4e",
+                    "surface-container": "#e9eef9",
+                    "secondary-fixed": "#e2e1ed",
+                    "outline-variant": "#aab3c1",
+                    "surface": "#f8f9ff",
+                    "on-tertiary-fixed": "#333d55",
+                    "on-error-container": "#782232",
+                    "primary-fixed": "#e0e0ff",
+                    "secondary": "#5e5e68",
+                    "on-primary-fixed": "#2c358e",
+                    "secondary-dim": "#52525c",
+                    "surface-variant": "#dae3f2",
+                    "on-secondary-fixed": "#3e3f48",
+                    "tertiary-container": "#d5dffd",
+                    "tertiary-dim": "#49536b",
+                    "on-background": "#2a333f",
+                    "on-secondary": "#faf8ff",
+                    "inverse-surface": "#0b0e12",
+                    "surface-container-low": "#f1f3fc",
+                    "error-container": "#ff8b9a",
+                    "primary-fixed-dim": "#ced1ff",
+                    "on-surface": "#2a333f",
+                    "secondary-fixed-dim": "#d4d3de",
+                    "primary-dim": "#4049a2",
+                    "on-error": "#fff7f7",
+                    "background": "#f8f9ff",
+                    "tertiary-fixed-dim": "#c7d1ee",
+                    "on-surface-variant": "#57606d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-slate-50/70 dark:bg-slate-950/70 backdrop-blur-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#4c56af] dark:text-[#7986cb]" data-icon="language">language</span>
+<span class="text-xl font-extrabold tracking-tighter text-[#4c56af] dark:text-[#7986cb]">VishwaPass</span>
+</div>
+<div class="flex items-center gap-4">
+<!-- Language Pivot -->
+<div class="bg-surface-container-high rounded-full p-1 flex items-center gap-1">
+<button class="px-3 py-1 rounded-full text-[10px] font-bold bg-surface-container-lowest text-primary shadow-sm">EN</button>
+<button class="px-3 py-1 rounded-full text-[10px] font-semibold text-on-surface-variant">हिं</button>
+</div>
+<button class="text-[#4c56af] dark:text-[#7986cb] font-manrope tracking-tight font-bold text-sm hover:bg-slate-200/50 dark:hover:bg-slate-800/50 px-3 py-1.5 rounded-xl transition-transform duration-200 active:scale-98">
+                हिं/EN
+            </button>
+</div>
+</nav>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Header Section -->
+<header class="mb-10">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-primary-container text-on-primary-container text-[10px] font-bold tracking-widest rounded uppercase">Active Tracking</span>
+</div>
+<h1 class="text-3xl font-extrabold tracking-tight text-on-surface mb-2">Schengen Visa Journey</h1>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-sm">
+                Tracking ID: <span class="font-mono font-semibold text-primary">VP-9821-FRA</span>
+</p>
+</header>
+<!-- Journey Summary Card -->
+<div class="bg-surface-container-low rounded-3xl p-6 mb-12 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-lowest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="flight_takeoff">flight_takeoff</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant font-medium">Destination</p>
+<p class="font-bold text-on-surface">France (Paris)</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-xs text-on-surface-variant font-medium">Est. Decision</p>
+<p class="font-bold text-on-surface">Oct 24, 2024</p>
+</div>
+</div>
+<!-- Timeline Section -->
+<div class="relative pl-4">
+<!-- Timeline vertical line -->
+<div class="absolute left-7 top-4 bottom-4 w-0.5 bg-surface-container-highest"></div>
+<!-- Step 1: Completed -->
+<div class="relative pl-12 pb-12">
+<div class="absolute left-0 top-1 w-6 h-6 bg-primary rounded-full flex items-center justify-center z-10 border-4 border-surface">
+<span class="material-symbols-outlined text-white text-xs font-bold" data-icon="check">check</span>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-on-surface">Documents Uploaded</h3>
+<span class="text-[10px] font-bold text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">VishwaPass Status</span>
+</div>
+<p class="text-xs text-on-surface-variant mb-3">All mandatory documents verified by our AI.</p>
+<div class="bg-surface-container-lowest p-3 rounded-2xl inline-flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="calendar_today">calendar_today</span>
+<span class="text-[11px] font-semibold">Sep 12, 2024</span>
+</div>
+</div>
+<!-- Step 2: Completed -->
+<div class="relative pl-12 pb-12">
+<div class="absolute left-0 top-1 w-6 h-6 bg-primary rounded-full flex items-center justify-center z-10 border-4 border-surface">
+<span class="material-symbols-outlined text-white text-xs font-bold" data-icon="check">check</span>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-on-surface">VFS Appointment</h3>
+<span class="text-[10px] font-bold text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">Embassy Status</span>
+</div>
+<p class="text-xs text-on-surface-variant mb-3">Biometrics and physical file submitted at VFS Global.</p>
+<div class="bg-surface-container-lowest p-3 rounded-2xl inline-flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="location_on">location_on</span>
+<span class="text-[11px] font-semibold">Sep 28, 2024 (VFS New Delhi)</span>
+</div>
+</div>
+<!-- Step 3: Current -->
+<div class="relative pl-12 pb-12">
+<div class="absolute left-0 top-1 w-6 h-6 bg-primary rounded-full flex items-center justify-center z-10 border-4 border-primary-container outline outline-4 outline-primary/10">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-primary">Embassy Submission</h3>
+<span class="text-[10px] font-bold text-primary bg-primary-container px-2 py-0.5 rounded">Embassy Status</span>
+</div>
+<p class="text-xs text-on-surface leading-relaxed mb-3">Application successfully received by the Embassy of France.</p>
+<div class="bg-primary text-on-primary p-4 rounded-2xl shadow-lg shadow-primary/10 mb-2">
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] font-bold tracking-widest uppercase opacity-80">Live Update</span>
+<span class="material-symbols-outlined text-sm animate-pulse" data-icon="sensors">sensors</span>
+</div>
+<p class="text-sm font-semibold">Your passport is being processed.</p>
+</div>
+<span class="text-[10px] font-medium text-on-surface-variant italic">Last updated: 2 hours ago</span>
+</div>
+<!-- Step 4: Pending -->
+<div class="relative pl-12 pb-12 opacity-40">
+<div class="absolute left-0 top-1 w-6 h-6 bg-surface-container-highest rounded-full flex items-center justify-center z-10 border-4 border-surface"></div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-on-surface">Under Review</h3>
+<span class="text-[10px] font-bold text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">Embassy Status</span>
+</div>
+<p class="text-xs text-on-surface-variant mb-3">Final verification of financial and travel documents.</p>
+<div class="flex items-center gap-2 text-[11px] font-semibold text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>Expected Oct 15</span>
+</div>
+</div>
+<!-- Step 5: Final -->
+<div class="relative pl-12 opacity-40">
+<div class="absolute left-0 top-1 w-6 h-6 bg-surface-container-highest rounded-full flex items-center justify-center z-10 border-4 border-surface"></div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-on-surface">Decision Ready</h3>
+<span class="text-[10px] font-bold text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">VishwaPass Status</span>
+</div>
+<p class="text-xs text-on-surface-variant mb-3">Passport ready for collection or courier dispatch.</p>
+<div class="flex items-center gap-2 text-[11px] font-semibold text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="local_shipping">local_shipping</span>
+<span>Estimated Oct 24</span>
+</div>
+</div>
+</div>
+<!-- Vault Preview Bento -->
+<section class="mt-16">
+<h2 class="text-lg font-bold mb-6 px-2">Journey Assets</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container rounded-3xl p-5 col-span-2 flex items-center justify-between">
+<div>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-1">Document Vault</p>
+<p class="text-sm font-semibold">Access your submitted file</p>
+</div>
+<button class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="folder_open">folder_open</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-3xl p-5 flex flex-col gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="support_agent">support_agent</span>
+<p class="text-xs font-bold leading-tight">Need help with tracking?</p>
+</div>
+<div class="bg-surface-container-low rounded-3xl p-5 flex flex-col gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="history_edu">history_edu</span>
+<p class="text-xs font-bold leading-tight">Embassy guidelines</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pt-3 pb-6 bg-slate-50/70 dark:bg-slate-950/70 backdrop-blur-xl rounded-t-3xl shadow-[0_-12px_32px_rgba(26,35,126,0.06)]">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#4c56af15] dark:bg-[#4c56af30] text-[#4c56af] dark:text-[#7986cb] rounded-xl px-4 py-1 scale-110 active:scale-95 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="fact_check" style="font-variation-settings: 'FILL' 1;">fact_check</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Checklist</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="inventory_2">inventory_2</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Vault</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Profile</span>
+</a>
+</nav>
+<!-- Floating Help Action (Suppressed on details screens, but showing here for utility) -->
+<!-- Suppressed per rule, navigation shell suffices -->
+</body></html>
+
+<!-- Application Tracker -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#e0e0ff",
+                    "on-primary-fixed-variant": "#4953ac",
+                    "on-primary-container": "#3f48a1",
+                    "tertiary-fixed": "#d5dffd",
+                    "surface-dim": "#d0dbec",
+                    "on-tertiary": "#f9f8ff",
+                    "tertiary": "#545f78",
+                    "on-secondary-fixed-variant": "#5a5b64",
+                    "on-secondary-container": "#50515a",
+                    "secondary-container": "#e2e1ed",
+                    "on-primary": "#f9f6ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#455068",
+                    "surface-container-highest": "#dae3f2",
+                    "inverse-on-surface": "#9b9da2",
+                    "outline": "#727b89",
+                    "surface-container-high": "#e2e8f5",
+                    "error-dim": "#4f0116",
+                    "surface-tint": "#4c56af",
+                    "on-tertiary-fixed-variant": "#4f5a72",
+                    "primary": "#4c56af",
+                    "inverse-primary": "#929bfa",
+                    "surface-bright": "#f8f9ff",
+                    "error": "#9e3f4e",
+                    "surface-container": "#e9eef9",
+                    "secondary-fixed": "#e2e1ed",
+                    "outline-variant": "#aab3c1",
+                    "surface": "#f8f9ff",
+                    "on-tertiary-fixed": "#333d55",
+                    "on-error-container": "#782232",
+                    "primary-fixed": "#e0e0ff",
+                    "secondary": "#5e5e68",
+                    "on-primary-fixed": "#2c358e",
+                    "secondary-dim": "#52525c",
+                    "surface-variant": "#dae3f2",
+                    "on-secondary-fixed": "#3e3f48",
+                    "tertiary-container": "#d5dffd",
+                    "tertiary-dim": "#49536b",
+                    "on-background": "#2a333f",
+                    "on-secondary": "#faf8ff",
+                    "inverse-surface": "#0b0e12",
+                    "surface-container-low": "#f1f3fc",
+                    "error-container": "#ff8b9a",
+                    "primary-fixed-dim": "#ced1ff",
+                    "on-surface": "#2a333f",
+                    "secondary-fixed-dim": "#d4d3de",
+                    "primary-dim": "#4049a2",
+                    "on-error": "#fff7f7",
+                    "background": "#f8f9ff",
+                    "tertiary-fixed-dim": "#c7d1ee",
+                    "on-surface-variant": "#57606d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-slate-50/70 dark:bg-slate-950/70 backdrop-blur-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#4c56af] dark:text-[#7986cb]" data-icon="language">language</span>
+<span class="text-xl font-extrabold tracking-tighter text-[#4c56af] dark:text-[#7986cb]">VishwaPass</span>
+</div>
+<div class="bg-surface-container-high px-4 py-1.5 rounded-full flex items-center gap-2 scale-95 active:scale-98 transition-transform duration-200 cursor-pointer">
+<span class="text-[10px] font-bold tracking-tight text-[#4c56af]">हिं/EN</span>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Editorial Header -->
+<div class="mb-10 ml-4">
+<h1 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">Vault</h1>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-[280px]">Your sovereign identity documents, encrypted and accessible globally.</p>
+</div>
+<!-- Critical Alert: Passport Expiry -->
+<div class="mb-8 p-6 rounded-xl bg-error-container/10 border-l-4 border-error relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-7xl" data-icon="priority_high">priority_high</span>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-error-container p-2 rounded-lg">
+<span class="material-symbols-outlined text-on-error-container" data-icon="event_busy">event_busy</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-on-error-container mb-1">Passport Expiry Alert</h3>
+<p class="text-sm text-on-error-container/80 mb-4">Your passport expires in 5 months. Most visa applications require 6 months validity.</p>
+<button class="bg-error text-on-error px-5 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 shadow-md shadow-error/20">Renew Now</button>
+</div>
+</div>
+</div>
+<!-- Document Grid (Asymmetric) -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Passport Card -->
+<div class="col-span-2 bg-surface-container-lowest p-5 rounded-xl transition-all hover:shadow-[0_12px_32px_rgba(26,35,126,0.06)] group">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="passport">travel</span>
+</div>
+<div>
+<p class="text-xs font-bold text-primary tracking-widest uppercase opacity-60">Primary</p>
+<h4 class="font-headline font-bold text-on-surface">Passport</h4>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="more_vert">more_vert</span>
+</div>
+<div class="aspect-[16/9] w-full rounded-lg bg-surface-container overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary/20 transition-all">
+<img class="w-full h-full object-cover opacity-60 grayscale-[0.5] group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" data-alt="close up of a dark blue passport cover with gold embossed emblem lying on a clean white surface with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoHlsIwLT85m4pHqiWSxYCr2DEWMJcxQ8h1gzGJlJw7027yx5Wkx1mh7tgwO49p4bk-mOFYIcKYV13Ud9IRpdbVh1AjsP7EQAsKWCtJzH1wDXX2Ntl16jdgHX2wCnhBt7UxczpnzTCdnmYkynCzbqEt9DpHNMpvzfK9538ZqF6M4LCfMoRFEXoj9J3jKnW4a2K4EDZMUXgm8-k4LfR7c6QJRldG-YdXJ0uhyll1k94N4-rbrr1QQqb4tPZDV3NQeA9zSRO8IMZpfI"/>
+</div>
+<div class="flex justify-between items-center text-[10px] font-semibold text-on-surface-variant">
+<span>L-8902XX45</span>
+<span>Updated 2d ago</span>
+</div>
+</div>
+<!-- Aadhar Card -->
+<div class="bg-surface-container-low p-4 rounded-xl transition-all hover:bg-surface-container-lowest hover:shadow-[0_12px_32px_rgba(26,35,126,0.06)] group">
+<div class="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="badge">badge</span>
+</div>
+<h4 class="font-headline font-bold text-on-surface mb-1">Aadhar Card</h4>
+<p class="text-[10px] text-on-surface-variant mb-4">National Identity</p>
+<div class="aspect-square w-full rounded-lg bg-surface-container-highest mb-4 overflow-hidden">
+<img class="w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-all" data-alt="minimalist representation of a secure identity card with abstract geometric patterns in shades of blue and gray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbYAtCzPvdi1Ni6GPJpC_rPHnbxb9uHk72OUhrRn14IOOJN9muKSRWecV67syF1PYx6Y1IKTYs2KRJJLcRbiUtqBB7RiB5Q67oAuTB4udRxSBylrKgpLLUZs2TMd3Cw334-K-TJ7kdkDjaEbG5eZjDo_4SilcR3Lv9JMwwaFTT_FqJCEDKASOanDymj3Rd-1xs04bM6S43wlhkRyxkvZvXCuEvDC9SILKkXu4F48cLlPwlKmotJqO41hcsQj8icX4qRwvAsfuxJz0"/>
+</div>
+<span class="text-[9px] font-medium text-on-surface-variant/70">Updated Mar 2024</span>
+</div>
+<!-- PAN Card -->
+<div class="bg-surface-container-low p-4 rounded-xl transition-all hover:bg-surface-container-lowest hover:shadow-[0_12px_32px_rgba(26,35,126,0.06)] group">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="account_balance_wallet">account_balance_wallet</span>
+</div>
+<h4 class="font-headline font-bold text-on-surface mb-1">PAN Card</h4>
+<p class="text-[10px] text-on-surface-variant mb-4">Financial Doc</p>
+<div class="aspect-square w-full rounded-lg bg-surface-container-highest mb-4 overflow-hidden">
+<img class="w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-all" data-alt="abstract architectural close up with sharp lines and deep shadows creating a secure professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIBpWgRuZre4PvABaErse865ryGakbGm4ZlE9IHujUdI5O8-LGtjrJKkKt2OOzk7-ORNQkbwGhGfWc9fVgtuIAy-KzttLg37sW4NgiORd_JrfitGK4hsTRdMwt-bVlk33nCLnIgWtEqQ98Agdogceus2WbT1kCmvmDNBEL2vklLFJ0etCkvmHnr46rSjkJg5T27HVzmGGo82lq0J3d9UTD-5hmXCAOvULpHDgOIvydj_B6clCU3nEThvWr_MkYBrWxFo0hryReNhg"/>
+</div>
+<span class="text-[9px] font-medium text-on-surface-variant/70">Updated Jan 2024</span>
+</div>
+<!-- Previous Visas -->
+<div class="col-span-2 bg-surface-container-low p-5 rounded-xl flex items-center justify-between group cursor-pointer hover:bg-surface-container-lowest transition-all">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center overflow-hidden relative">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="travel_explore">travel_explore</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Previous Visas</h4>
+<p class="text-xs text-on-surface-variant">Schengen, US-B1/B2, UK Standard</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex -space-x-3">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-low bg-slate-200"></div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-low bg-slate-300"></div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-low bg-slate-400 flex items-center justify-center text-[8px] font-bold">+3</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</main>
+<!-- FAB -->
+<button class="fixed bottom-24 right-6 w-14 h-14 rounded-2xl bg-gradient-to-tr from-primary to-primary-dim text-on-primary flex items-center justify-center shadow-[0_12px_32px_rgba(26,35,126,0.3)] z-[60] active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="add">add</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pt-3 pb-6 bg-slate-50/70 dark:bg-slate-950/70 backdrop-blur-xl rounded-t-3xl shadow-[0_-12px_32px_rgba(26,35,126,0.06)]">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1 transition-all duration-300 scale-110 active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1 transition-all duration-300 scale-110 active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Checklist</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#4c56af15] dark:bg-[#4c56af30] text-[#4c56af] dark:text-[#7986cb] rounded-xl px-4 py-1 transition-all duration-300 scale-110 active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="inventory_2" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Vault</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1 transition-all duration-300 scale-110 active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[10px] font-semibold tracking-wide">Profile</span>
+</div>
+</nav>
+</body></html>
